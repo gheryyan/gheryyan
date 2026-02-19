@@ -5,7 +5,7 @@
 1. **Untuk kampus remote**: **WAJIB** melakukan **share screen** (**DESKTOP/ENTIRE SCREEN**) dan **unmute microphone** ketika Live Code berjalan (tidak melakukan share screen/salah screen atau tidak unmute microphone akan di ingatkan).
 1. Kerjakan secara individu. Segala bentuk kecurangan (mencontek ataupun diskusi) akan menyebabkan skor live code ini 0.
 1. Clone repo ini kemudian buatlah **branch dengan nomor yang diinformasikan oleh buddy kalian**.
-1. Kerjakan pada file JavaScript (*.js) yang telah disediakan.
+1. Kerjakan pada file JavaScript (\*.js) yang telah disediakan.
 1. Waktu pengerjaan:
    - **90 menit** untuk **4 soal**.
 1. **Pada text editor hanya ada file yang terdapat pada repository ini**.
@@ -33,10 +33,3 @@
   - Object: `Object.keys()`, `Object.values()`
   - Array: `push()`
 - Jangan lupa untuk menyertakan pseudocode apabila diminta oleh soal. Apabila **pseudocode tidak disertakan**, mengakibatkan **nilai 0** untuk soal tersebut.
-- Reminder:
-  - **Live Code 1 = 15%**,
-  - **Live Code 2 = 20%**,
-  - **Live Code 3 = 20%**,
-  - **Daily challenges = 45%**,
-  - **Rocket 5%**.
-- **Passing score phase 0 = 65%**.
