@@ -65,8 +65,37 @@ let groups = [
 
 
 function hireGroup(groups, budget) {
-    // code di sini
+    if (budget === undefined) {
+        return "There's no budget";
+    }
 
+    let result = {
+        performances: {},
+        change: 0
+    };
+
+    let canHire = true;
+
+    while (canHire) {
+        canHire = false;
+
+        for (let i = 0; i < groups.length; i++) {
+            if (budget >= groups[i].price) {
+                budget -= groups[i].price;
+                canHire = true;
+
+                if (result.performances[groups[i].name] === undefined) {
+                    result.performances[groups[i].name] = 1;
+                } else {
+                    result.performances[groups[i].name]++;
+                }
+            }
+        }
+    }
+
+    result.change = budget;
+
+    return result;
 }
 
 console.log(hireGroup(groups, 5350))

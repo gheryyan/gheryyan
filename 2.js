@@ -46,7 +46,38 @@ OUTPUT:
 */
 
 function quoteGenerator(arrOfArr) {
-  // Your code here
+  if (!arrOfArr || arrOfArr.length === 0) {
+    return "invalid input";
+  }
+
+  let quote = "";
+  let indexes = "";
+
+  for (let i = 0; i < arrOfArr.length; i++) {
+    let inner = arrOfArr[i];
+    let maxLength = 0;
+    let chosenWord = "";
+    let chosenIndex = 0;
+
+    for (let j = 0; j < inner.length; j++) {
+      if (inner[j].length > maxLength) {
+        maxLength = inner[j].length;
+        chosenWord = inner[j];
+        chosenIndex = j;
+      }
+    }
+
+    // gabung quote
+    if (i === 0) {
+      quote += chosenWord;
+      indexes += chosenIndex;
+    } else {
+      quote += " " + chosenWord;
+      indexes += "," + chosenIndex;
+    }
+  }
+
+  return [quote, indexes];
 }
 
 let quotes0 = [
