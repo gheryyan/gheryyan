@@ -67,7 +67,6 @@ function quoteGenerator(arrOfArr) {
       }
     }
 
-    // gabung quote
     if (i === 0) {
       quote += chosenWord;
       indexes += chosenIndex;
