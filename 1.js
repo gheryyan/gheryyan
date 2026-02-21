@@ -64,12 +64,11 @@ function getHikingDestination(destinationList) {
     Others: [],
   };
 
-  // cek undefined
+
   if (destinationList === undefined) {
     return "Invalid Data!";
   }
 
-  // cek array kosong
   if (destinationList.length === 0) {
     return "Destination List Data is Not Exist!";
   }
